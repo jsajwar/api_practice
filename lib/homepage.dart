@@ -53,7 +53,7 @@ class _HomePageState extends State<HomePage> {
   }
 
   Future<List<Quote>> getData() async {
-    final response = await http.get(Uri.parse('https://dummyjson.com/quotes'));
+    final response = await http.get(Uri.parse("https://dummyjson.com/quotes"));
     var data = jsonDecode(response.body.toString());
 
     if (response.statusCode == 200) {
